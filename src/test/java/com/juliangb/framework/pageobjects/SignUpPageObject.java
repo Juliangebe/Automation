@@ -26,31 +26,48 @@ public class SignUpPageObject {
     private By confirmPasswordTextBox = By.id("secondpassword");
     private By submitButton = By.id("submitbtn");
 
+    public void goTo(String url) {
+        this.driver.get(url);
+    }
+
     public void writeFirstName(String firstName) {
         this.driver.findElement(this.firstNameTextBox).sendKeys(firstName);
 
 
     }
+
     public void writeLastName(String lastName) {
         this.driver.findElement(this.lastNameTextBox).sendKeys(lastName);
 
 
     }
+
+    public void selectCountry(String country){
+        this.driver.findElement(this.countryList)
+
+    }
+    public void selectGender() {
+        this.driver.findElement(this.maleRadioButton).click();
+    }
+
     public void writeEmailAddress(String email) {
         this.driver.findElement(this.emailAddressTextBox).sendKeys(email);
 
 
     }
+
     public void writePhone(String phone) {
         this.driver.findElement(this.phoneTextBox).sendKeys(phone);
 
 
     }
+
     public void writePassword(String password) {
         this.driver.findElement(this.passwordTextBox).sendKeys(password);
 
 
     }
+
     public void writeConfirmPassword(String confirmPassword) {
         this.driver.findElement(this.confirmPasswordTextBox).sendKeys(confirmPassword);
 

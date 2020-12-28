@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="CucumberTest" time="0.023" errors="0" skipped="4">
+<testsuite tests="4" failures="0" name="CucumberTest" time="0.003" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.8+10-LTS"/>
@@ -28,7 +28,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:\apache-maven-3.6.3\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Anaconda3;C:\Program Files\Anaconda3\Scripts;C:\Program Files\Anaconda3\Library\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Windows Live\Shared;C:\apache-maven-3.6.3\bin;%MAVEN_HOME%\bin;C:\Program Files\Java\jdk-11.0.8;E:\python38;E:\python38\Scripts;E:\python38\DLLs;;E:\python38\Lib;E:\python38\libs;E:\python38\libs;E:\python38\DLLs;E:\python38\Lib;E:\python38\Scripts;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\USER.JULIANGB\AppData\Local\Microsoft\WindowsApps;C:\Users\USER.JULIANGB\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\USER.JULIANGB\AppData\Roaming\npm;C:\Program Files\Java\jdk-11.0.8\bin;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Anaconda3;C:\Program Files\Anaconda3\Scripts;C:\Program Files\Anaconda3\Library\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Windows Live\Shared;C:\apache-maven-3.6.3\bin;%MAVEN_HOME%\bin;C:\Program Files\Java\jdk-11.0.8;E:\python38;E:\python38\Scripts;E:\python38\DLLs;;E:\python38\Lib;E:\python38\libs;E:\python38\libs;E:\python38\DLLs;E:\python38\Lib;E:\python38\Scripts;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\USER.JULIANGB\AppData\Local\Microsoft\WindowsApps;C:\Users\USER.JULIANGB\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\USER.JULIANGB\AppData\Roaming\npm;C:\Program Files\Java\jdk-11.0.8\bin;;."/>
     <property name="maven.conf" value="C:\apache-maven-3.6.3\bin\../conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="55.0"/>
@@ -65,17 +65,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Scenario: Client sign up sucessfully" name="Given Pepito wants to have an account" time="0.003">
-    <skipped/>
-  </testcase>
-  <testcase classname="Scenario: Client sign up sucessfully" name="When he send required information to get the account" time="0.004">
-    <skipped/>
-  </testcase>
-  <testcase classname="Scenario: Client sign up sucessfully" name="Then he should be told that the account was created" time="0.005">
-    <skipped/>
-  </testcase>
-  <testcase classname="Scenario: Client sign up sucessfully" name="Scenario: Client sign up sucessfully" time="0.005">
-    <skipped/>
-  </testcase>
-  <testcase classname="Scenario: Client sign up sucessfully" name="Scenario: Client sign up sucessfully" time="0.006"/>
+  <testcase classname="Scenario: Client sign up sucessfully" name="Given Pepito wants to have an account" time="0.003"/>
+  <testcase classname="Scenario: Client sign up sucessfully" name="When he send required information to get the account" time="0"/>
+  <testcase classname="Scenario: Client sign up sucessfully" name="Then he should be told that the account was created" time="0"/>
+  <testcase classname="Scenario: Client sign up sucessfully" name="Scenario: Client sign up sucessfully" time="0"/>
 </testsuite>

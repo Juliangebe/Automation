@@ -1,2 +1,3 @@
+com\juliangb\framework\stepdefinitions\SingUpStepDefinitions.class
+com\juliangb\framework\pageobjects\SignUpPageObject.class
 CucumberTest.class
-stepdefinitions\SingUpStepDefinitions.class

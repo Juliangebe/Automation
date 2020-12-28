@@ -1,13 +1,26 @@
 package com.juliangb.framework.stepdefinitions;
 
+import com.juliangb.framework.pageobjects.SignUpPageObject;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SingUpStepDefinitions {
 
     @Given("^Pepito wants to have an account$")
     public void pepito_wants_to_have_an_account()  {
+        WebDriver driver = new ChromeDriver();
+        System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"src/test/resources/drivers/chromedriver.exe");
+        SignUpPageObject signUpPageObject= new SignUpPageObject(driver);
+        signUpPageObject.goTo("http://demo.automationtesting.in/Register.html");
+        signUpPageObject.writeFirstName("Julian");
+        signUpPageObject.writeLastName("Galeano B");
+        signUpPageObject.writeEmailAddress("julian@correo.com");
+        signUpPageObject.selectGender();
+        signUpPageObject.writePhone("2524404");
+        signUpPageObject.
 
     }
 
