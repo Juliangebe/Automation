@@ -18,9 +18,13 @@ public class SingUpStepDefinitions {
         signUpPageObject.writeFirstName("Julian");
         signUpPageObject.writeLastName("Galeano B");
         signUpPageObject.writeEmailAddress("julian@correo.com");
-        signUpPageObject.selectGender();
-        signUpPageObject.writePhone("2524404");
-        signUpPageObject.
+        signUpPageObject.selectMaleGender();
+        signUpPageObject.writePhone("884654652525");
+        signUpPageObject.selectCountry("Colombia");
+        signUpPageObject.writePassword("123Asc");
+        signUpPageObject.writeConfirmPassword("123Asc");
+        signUpPageObject.submitForm();
+        //driver.quit();
 
     }
 

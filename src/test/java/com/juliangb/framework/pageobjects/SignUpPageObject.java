@@ -2,6 +2,7 @@ package com.juliangb.framework.pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class SignUpPageObject {
 
@@ -36,6 +37,10 @@ public class SignUpPageObject {
 
     }
 
+    public void submitForm(){
+        this.driver.findElement(this.submitButton).click();
+    }
+
     public void writeLastName(String lastName) {
         this.driver.findElement(this.lastNameTextBox).sendKeys(lastName);
 
@@ -43,10 +48,12 @@ public class SignUpPageObject {
     }
 
     public void selectCountry(String country){
-        this.driver.findElement(this.countryList)
+        new Select(this.driver.findElement(this.countryList)).selectByValue(country);
+
+
 
     }
-    public void selectGender() {
+    public void selectMaleGender() {
         this.driver.findElement(this.maleRadioButton).click();
     }
 
