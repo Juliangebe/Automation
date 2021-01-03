@@ -8,7 +8,6 @@ public class SignUpServices {
     private WebDriver driver;
     private SignUpPageObject signUpPageObject;
 
-    SignUpServices signUpServices;
 
     public SignUpServices(WebDriver driver) {
         this.driver = driver;
@@ -24,10 +23,9 @@ public class SignUpServices {
         this.signUpPageObject.getFirstNameTextBox().sendKeys(firstName);
 
 
-
     }
 
-    public void submitForm(){
+    public void submitForm() {
         this.signUpPageObject.getSubmitButton().click();
     }
 
@@ -37,18 +35,18 @@ public class SignUpServices {
 
     }
 
-    public void selectCountry(String country){
+    public void selectCountry(String country) {
         new Select(this.signUpPageObject.getCountryList()).selectByValue(country);
 
 
-
     }
+
     public void selectMaleGender() {
         this.signUpPageObject.getMaleRadioButton().click();
     }
 
     public void writeEmailAddress(String email) {
-        this.signUpPageObject.getLastNameTextBox().sendKeys(email);
+        this.signUpPageObject.getEmailAddressTextBox().sendKeys(email);
 
 
     }
@@ -58,15 +56,16 @@ public class SignUpServices {
 
 
     }
-    public void selectYear(String year){
+
+    public void selectYear(String year) {
         new Select(this.signUpPageObject.getDateOfBirthYear()).selectByValue(year);
     }
 
-    public void selectMonth(String month){
+    public void selectMonth(String month) {
         new Select(this.signUpPageObject.getDateOfBirthMonth()).selectByValue(month);
     }
 
-    public void selectDay(String day){
+    public void selectDay(String day) {
         new Select(this.signUpPageObject.getDateOfBirthDay()).selectByValue(day);
     }
 
