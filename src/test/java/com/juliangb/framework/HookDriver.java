@@ -7,9 +7,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class HookDriver {
 
-    public static WebDriver driver;
+   /*  public static WebDriver driver;
 
-    @Before
+  @Before
     public static void createDriver() {
         System.setProperty("webdriver.chrome.driver",
                 System.getProperty("user.dir") + "/src/test/resources/drivers/chromedriver.exe");
@@ -23,5 +23,7 @@ public class HookDriver {
         }
 
     }
+
+   */
 
 }
