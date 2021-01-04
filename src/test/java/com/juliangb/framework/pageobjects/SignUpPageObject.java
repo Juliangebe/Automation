@@ -1,46 +1,51 @@
 package com.juliangb.framework.pageobjects;
 
+import lombok.Data;
 import lombok.Getter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 @Getter
 public class SignUpPageObject {
 
-
+    @Autowired
     public SignUpPageObject(WebDriver driver) {
         PageFactory.initElements(driver, this);
 
     }
-    @Getter
+
     @FindBy(xpath = "//input[@ng-model='FirstName']")
-    private By firstNameTextBox;
+    private WebElement firstNameTextBox;
     @FindBy(xpath = "//input[@ng-model='LastName']")
-    private By lastNameTextBox;
+    private WebElement lastNameTextBox;
     @FindBy(xpath = "//input[@ng-model='EmailAdress']")
-    private By emailAddressTextBox;
+    private WebElement emailAddressTextBox;
     @FindBy(xpath = "//input[@ng-model='Phone']")
-    private By phoneTextBox;
+    private WebElement phoneTextBox;
     @FindBy(xpath = "//input[@value='Male']")
-    private By maleRadioButton;
+    private WebElement maleRadioButton;
     @FindBy(xpath = "//input[@value='FeMale']")
-    private By femaleRadioButton;
+    private WebElement femaleRadioButton;
     @FindBy(id = "yearbox")
-    private By dateOfBirthYear;
+    private WebElement dateOfBirthYear;
     @FindBy(xpath = "//select[@ng-model='monthbox']")
-    private By dateOfBirthMonth;
+    private WebElement dateOfBirthMonth;
     @FindBy(id = "daybox")
-    private By dateOfBirthDay;
+    private WebElement dateOfBirthDay;
     @FindBy(id = "countries")
-    private By countryList;
+    private WebElement countryList;
     @FindBy(id = "firstpassword")
-    private By passwordTextBox;
+    private WebElement passwordTextBox;
     @FindBy(id = "secondpassword")
-    private By confirmPasswordTextBox;
+    private WebElement confirmPasswordTextBox;
     @FindBy(id = "submitbtn")
-    private By submitButton;
+    private WebElement submitButton;
 
 
 }

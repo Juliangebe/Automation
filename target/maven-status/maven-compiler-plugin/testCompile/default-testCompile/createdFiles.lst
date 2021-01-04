@@ -1,3 +1,8 @@
+com\juliangb\framework\util\drivers\DriverFactory.class
+com\juliangb\framework\config\DriverConfig.class
+com\juliangb\framework\enums\Browser.class
 com\juliangb\framework\stepdefinitions\SingUpStepDefinitions.class
 com\juliangb\framework\pageobjects\SignUpPageObject.class
+com\juliangb\framework\pageobjects\SignUpServices.class
+com\juliangb\framework\HookDriver.class
 CucumberTest.class

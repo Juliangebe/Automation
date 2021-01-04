@@ -1,33 +1,38 @@
 package com.juliangb.framework.stepdefinitions;
 
-import com.juliangb.framework.pageobjects.SignUpPageObject;
+import com.juliangb.framework.HookDriver;
+import com.juliangb.framework.config.DriverConfig;
+import com.juliangb.framework.pageobjects.SignUpServices;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
 
+@ContextConfiguration(classes = {DriverConfig.class})
 public class SingUpStepDefinitions {
+    @Autowired
+    private SignUpServices signUp;
 
     @Given("^Pepito wants to have an account$")
-    public void pepito_wants_to_have_an_account() {
-        WebDriver driver = new ChromeDriver();
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "src/test/resources/drivers/chromedriver.exe");
-        SignUpPageObject signUpPageObject = new SignUpPageObject(driver);
-        signUpPageObject.goTo("http://demo.automationtesting.in/Register.html");
-        signUpPageObject.writeFirstName("Julian");
-        signUpPageObject.writeLastName("Galeano B");
-        signUpPageObject.writeEmailAddress("julian@correo.com");
-        signUpPageObject.selectMaleGender();
-        signUpPageObject.writePhone("1234523652");
-        signUpPageObject.selectCountry("Colombia");
-        signUpPageObject.writePassword("123Asc");
-        signUpPageObject.writeConfirmPassword("123Asc");
-        signUpPageObject.selectYear("1996");
-        signUpPageObject.selectDay("25");
-        signUpPageObject.selectMonth("June");
-        signUpPageObject.submitForm();
-        driver.quit();
+    public void pepito_wants_to_have_an_account() throws InterruptedException {
+
+
+        signUp.goTo("http://demo.automationtesting.in/Register.html");
+        signUp.writeFirstName("Julian");
+        signUp.writeLastName("Galeano B");
+        signUp.writeEmailAddress("julian@correo.com");
+        signUp.selectMaleGender();
+        signUp.writePhone("1234523652");
+        signUp.selectCountry("Colombia");
+        signUp.writePassword("123Asc");
+        signUp.writeConfirmPassword("123Asc");
+        signUp.selectYear("1996");
+        signUp.selectDay("25");
+        signUp.selectMonth("June");
+        signUp.submitForm();
+        Thread.sleep(4000);
+
 
     }
 
