@@ -12,13 +12,13 @@ public class DriverFactory {
 public static WebDriver get(Browser browser) throws IllegalAccessException {
     if (Browser.chrome == browser) {
         System.setProperty("webdriver.chrome.driver",
-               String.format(path,"chromeDriver"));
+               String.format(path,"chromedriver.exe"));
         return new ChromeDriver();
 
     }
     if (Browser.firefox == browser) {
         System.setProperty("webdriver.gecko.driver",
-                String.format(path,"geckodriver"));
+                String.format(path,"geckodriver.exe"));
         return new FirefoxDriver();
 
     }

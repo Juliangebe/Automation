@@ -1,24 +1,27 @@
 package com.juliangb.framework.stepdefinitions;
 
-import com.juliangb.framework.HookDriver;
+
 import com.juliangb.framework.config.DriverConfig;
 import com.juliangb.framework.pageobjects.SignUpServices;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.test.context.ContextConfiguration;
 
 @ContextConfiguration(classes = {DriverConfig.class})
 public class SingUpStepDefinitions {
     @Autowired
     private SignUpServices signUp;
+    @Value("${url}")
+    private String url;
 
     @Given("^Pepito wants to have an account$")
     public void pepito_wants_to_have_an_account() throws InterruptedException {
 
 
-        signUp.goTo("http://demo.automationtesting.in/Register.html");
+        signUp.goTo(url);
         signUp.writeFirstName("Julian");
         signUp.writeLastName("Galeano B");
         signUp.writeEmailAddress("julian@correo.com");
@@ -31,7 +34,6 @@ public class SingUpStepDefinitions {
         signUp.selectDay("25");
         signUp.selectMonth("June");
         signUp.submitForm();
-        Thread.sleep(4000);
 
 
     }
