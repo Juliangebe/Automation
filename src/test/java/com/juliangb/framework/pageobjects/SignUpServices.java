@@ -1,5 +1,6 @@
 package com.juliangb.framework.pageobjects;
 
+import com.juliangb.framework.enums.Gender;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -46,8 +47,21 @@ public class SignUpServices {
 
     }
 
+    public void selectGender(Gender gender){
+
+        if (gender== Gender.Male){
+            selectMaleGender();
+
+        }else{
+            selectFemaleGender();
+        }
+    }
     public void selectMaleGender() {
         this.signUpPageObject.getMaleRadioButton().click();
+    }
+
+    public void selectFemaleGender() {
+        this.signUpPageObject.getFemaleRadioButton().click();
     }
 
     public void writeEmailAddress(String email) {

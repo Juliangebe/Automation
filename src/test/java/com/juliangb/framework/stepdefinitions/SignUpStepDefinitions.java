@@ -1,8 +1,12 @@
 package com.juliangb.framework.stepdefinitions;
 
 
+import com.juliangb.framework.builders.data.UserBuilder;
 import com.juliangb.framework.config.DriverConfig;
+import com.juliangb.framework.models.User;
 import com.juliangb.framework.pageobjects.SignUpServices;
+import com.juliangb.framework.tasks.NavigateTo;
+import com.juliangb.framework.tasks.UserSignUp;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -11,29 +15,19 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.test.context.ContextConfiguration;
 
 @ContextConfiguration(classes = {DriverConfig.class})
-public class SingUpStepDefinitions {
+public class SignUpStepDefinitions {
     @Autowired
     private SignUpServices signUp;
-    @Value("${url}")
-    private String url;
+    @Autowired
+    NavigateTo navigateTo;
+    @Autowired
+    UserSignUp userSignUp;
+
 
     @Given("^Pepito wants to have an account$")
     public void pepito_wants_to_have_an_account() throws InterruptedException {
 
-
-        signUp.goTo(url);
-        signUp.writeFirstName("Julian");
-        signUp.writeLastName("Galeano B");
-        signUp.writeEmailAddress("julian@correo.com");
-        signUp.selectMaleGender();
-        signUp.writePhone("1234523652");
-        signUp.selectCountry("Australia");
-        signUp.writePassword("123Asc");
-        signUp.writeConfirmPassword("123Asc");
-        signUp.selectYear("1996");
-        signUp.selectDay("25");
-        signUp.selectMonth("June");
-        signUp.submitForm();
+        navigateTo.signUpPage();
 
 
     }
@@ -41,6 +35,10 @@ public class SingUpStepDefinitions {
     @When("^he send required information to get the account$")
     public void he_send_required_information_to_get_the_account() {
 
+        userSignUp.withInfo(
+                UserBuilder.anUser().withDefaultInfo()
+                        .build()
+        );
     }
 
     @Then("^he should be told that the account was created$")
