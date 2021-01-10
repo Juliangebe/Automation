@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="CucumberTest" time="0.011" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="CucumberTest" time="0.003" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.8+10-LTS"/>
@@ -45,7 +45,7 @@
     <property name="java.class.path" value="C:\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -Denvironment=prod"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-11.0.8"/>
     <property name="user.language" value="es"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -53,6 +53,7 @@
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="11.0.8"/>
     <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="environment" value="prod"/>
     <property name="sun.stderr.encoding" value="cp850"/>
     <property name="maven.home" value="C:\apache-maven-3.6.3\bin\.."/>
     <property name="file.separator" value="\"/>
@@ -65,8 +66,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Scenario: Client sign up sucessfully" name="Given Pepito wants to have an account" time="0.006"/>
-  <testcase classname="Scenario: Client sign up sucessfully" name="When he send required information to get the account" time="0.001"/>
+  <testcase classname="Scenario: Client sign up sucessfully" name="Given Pepito wants to have an account" time="0.003"/>
+  <testcase classname="Scenario: Client sign up sucessfully" name="When he send required information to get the account" time="0"/>
   <testcase classname="Scenario: Client sign up sucessfully" name="Then he should be told that the account was created" time="0"/>
-  <testcase classname="Scenario: Client sign up sucessfully" name="Scenario: Client sign up sucessfully" time="0.004"/>
+  <testcase classname="Scenario: Client sign up sucessfully" name="Scenario: Client sign up sucessfully" time="0"/>
 </testsuite>

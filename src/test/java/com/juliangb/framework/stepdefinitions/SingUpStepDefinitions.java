@@ -27,7 +27,7 @@ public class SingUpStepDefinitions {
         signUp.writeEmailAddress("julian@correo.com");
         signUp.selectMaleGender();
         signUp.writePhone("1234523652");
-        signUp.selectCountry("Colombia");
+        signUp.selectCountry("Australia");
         signUp.writePassword("123Asc");
         signUp.writeConfirmPassword("123Asc");
         signUp.selectYear("1996");

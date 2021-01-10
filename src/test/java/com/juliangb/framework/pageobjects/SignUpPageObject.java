@@ -12,11 +12,12 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Getter
-public class SignUpPageObject {
+public class SignUpPageObject extends PageObjectsBase {
 
     @Autowired
     public SignUpPageObject(WebDriver driver) {
-        PageFactory.initElements(driver, this);
+        super(driver);
+
 
     }
 
