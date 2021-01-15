@@ -1,7 +1,12 @@
 Feature:
   Scenario: Client sign up sucessfully
-    Given Pepito wants to have an account
-    When he send required information to get the account
-    Then he should be told that the account was created
+    Given The client wants to have an account
+    When He send required information to get the account
+    Then He should be told that the account was created
+
+  Scenario: Client sign up failed
+    Given The client wants to have an account
+    When He send required information to get the account
+    Then He should be told that the account was not created
 
 
