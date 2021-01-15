@@ -13,7 +13,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.spring.CucumberContextConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.test.context.ContextConfiguration;
 @CucumberContextConfiguration
 @ContextConfiguration(classes = {DriverConfig.class})
@@ -52,7 +51,7 @@ public class SignUpStepDefinitions {
 
     @Then("He should be told that the account was not created")
     public void he_should_be_told_that_the_account_was_not_created() {
-        assertThat(true).isEqualTo(true);
+        assertThat(true).isEqualTo(false);
 
     }
 }

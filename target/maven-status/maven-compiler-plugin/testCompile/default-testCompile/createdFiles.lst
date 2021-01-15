@@ -4,6 +4,7 @@ com\juliangb\framework\tasks\UserSignUp.class
 com\juliangb\framework\models\User$UserBuilder.class
 com\juliangb\framework\models\User.class
 com\juliangb\framework\HookDriver.class
+com\juliangb\framework\util\reporting\PhotograperHook.class
 com\juliangb\framework\builders\data\UserBuilder.class
 com\juliangb\framework\stepdefinitions\SignUpStepDefinitions.class
 com\juliangb\framework\util\drivers\DriverFactory.class
