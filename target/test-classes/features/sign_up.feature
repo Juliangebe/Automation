@@ -1,5 +1,5 @@
 Feature:
-  Scenario: Client sign up sucessfully
+  Scenario: Client sign up successfully
     Given The client wants to have an account
     When He send required information to get the account
     Then He should be told that the account was created
