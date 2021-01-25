@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: CucumberTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 12.283 sec <<< FAILURE!
-Client sign up failed(EMPTY_NAME)  Time elapsed: 1.645 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<[fals]e> but was:<[tru]e>
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at com.juliangb.framework.stepdefinitions.SignUpStepDefinitions.he_should_be_told_that_the_account_was_not_created(SignUpStepDefinitions.java:54)
-	at ?.He should be told that the account was not created(file:///C:/Users/USER.JULIANGB/Desktop/Automation/SeleniumFramework/src/test/resources/features/sign_up.feature:10)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.505 sec
