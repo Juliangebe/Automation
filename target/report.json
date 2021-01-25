@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-01-24T23:43:09.329Z",
+        "start_timestamp": "2021-01-25T05:18:57.151Z",
         "line": 2,
         "name": "Client sign up successfully",
         "description": "",
@@ -19,20 +19,10 @@
           },
           {
             "result": {
-              "duration": 1001600,
               "status": "passed"
             },
             "match": {
               "location": "com.juliangb.framework.util.reporting.PhotograperHook.takeScreenshotAfterFailingScenario(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 1712039300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.juliangb.framework.util.reporting.HookReporter.reportFinalScenarioStatus(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -41,7 +31,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1624848800,
+              "duration": 2098235400,
               "status": "passed"
             },
             "line": 3,
@@ -52,7 +42,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 2001000,
+                  "duration": 2000900,
                   "status": "passed"
                 },
                 "match": {
@@ -64,7 +54,7 @@
           },
           {
             "result": {
-              "duration": 1010001200,
+              "duration": 1107000300,
               "status": "passed"
             },
             "line": 4,
@@ -86,7 +76,7 @@
           },
           {
             "result": {
-              "duration": 56997800,
+              "duration": 75996900,
               "status": "passed"
             },
             "line": 5,
@@ -109,7 +99,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-01-24T23:43:13.815Z",
+        "start_timestamp": "2021-01-25T05:19:03.098Z",
         "line": 7,
         "name": "Client sign up failed",
         "description": "",
@@ -130,15 +120,6 @@
             "match": {
               "location": "com.juliangb.framework.util.reporting.PhotograperHook.takeScreenshotAfterFailingScenario(io.cucumber.java.Scenario)"
             }
-          },
-          {
-            "result": {
-              "duration": 84026300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.juliangb.framework.util.reporting.HookReporter.reportFinalScenarioStatus(io.cucumber.java.Scenario)"
-            }
           }
         ],
         "type": "scenario",
@@ -146,7 +127,7 @@
         "steps": [
           {
             "result": {
-              "duration": 377999100,
+              "duration": 382000600,
               "status": "passed"
             },
             "line": 8,
@@ -157,7 +138,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 1002000,
+                  "duration": 1002500,
                   "status": "passed"
                 },
                 "match": {
@@ -169,7 +150,7 @@
           },
           {
             "result": {
-              "duration": 1001526400,
+              "duration": 925998300,
               "status": "passed"
             },
             "line": 9,

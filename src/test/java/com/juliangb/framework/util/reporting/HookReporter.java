@@ -7,7 +7,7 @@ import io.restassured.http.ContentType;
 
 public class HookReporter {
 
-    private static final String ELASTIC_SEARCH_URL = "http://localhost:9200/automation/suite";
+    /* private static final String ELASTIC_SEARCH_URL = "http://localhost:9200/automation/suite";
     private static final String executionId = "12sWsa2";
 
     @After
@@ -25,5 +25,6 @@ public class HookReporter {
                 .post(ELASTIC_SEARCH_URL);
     }
 
+*/
 
 }
