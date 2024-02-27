@@ -23,7 +23,7 @@
     <properties>
         <cucumber.version>6.8.1</cucumber.version>
         <selenium.version>4.0.0-alpha-4</selenium.version>
-        <spring.version>5.2.12.RELEASE</spring.version>
+        <spring.version>5.2.22.RELEASE</spring.version>
 
         <maven.compiler.source>1.6</maven.compiler.source>
         <maven.compiler.target>1.6</maven.compiler.target>
